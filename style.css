@@ -19,6 +19,7 @@
 }
 .header-nav{
     display: flex;
+    margin-bottom: 3rem;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
@@ -145,33 +146,26 @@ main{
 }
 .gallery-main div:nth-child(3){
     background: url(./images/desktop/image-soccer-team.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .gallery-main div:nth-child(4){
     background: url(./images/desktop/image-grid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+   
 }
 .gallery-main div:nth-child(5){
     background: url(./images/desktop/image-from-above.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .gallery-main div:nth-child(6){
     background: url(./images/desktop/image-pocket-borealis.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .gallery-main div:nth-child(7){
     background: url(./images/desktop/image-curiosity.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 .gallery-main div:nth-child(8){
     background: url(./images/desktop/image-fisheye.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 .gallery-main div p{
     position: absolute;
@@ -199,3 +193,179 @@ main{
 .gallery-main div:hover{
     color: var(--black);
 }
+.footer-container{
+    background: var(--black);
+    padding:2rem 8rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color: var(--white);
+}
+.footer-left,.footer-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.footer-left nav ul li{
+    list-style:none;
+    display:inline;
+    margin-right: 1rem;
+}
+.footer-left nav ul li a{
+    color:var(--white);
+    text-decoration: none;
+}
+.footer-icons{
+    display: flex;
+    gap:1rem;
+}
+.footer-icons img{
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+.footer-icons img:hover{
+    transform: scale(1.4);
+}
+.icon-menu{
+    display: none;
+}
+
+@media(max-width:600px){
+    body{
+        position: relative;
+    }
+     .header-container{
+        padding: 1.5rem 2rem;
+        height: 100%;
+        background-image: url(./images/mobile/image-hero.jpg);
+     }
+     .icon-menu{
+        display: block;
+     }
+
+     .header-nav nav{
+        /* display: none; */
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background: var(--black);
+        padding: 2rem 2rem;
+        transition: all 0.4s ease-out;
+        transform: translateX(-100%);
+     }
+
+     .mobile-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .header-nav nav ul{
+        margin-top: 30%;
+     }
+     .header-nav nav ul li{
+        display: block;
+        margin: 1.5rem 0;
+        text-transform: uppercase;
+     }
+     .header-nav nav ul li::after{
+        display: none;
+     }
+     .header-nav nav ul li a{
+        font-family:  "Josefin Sans", sans-serif;
+        font-size: 1.5rem;
+     }
+     .header-container h1{
+        width:100%;
+        margin: 30% auto;
+        font-size: 2.5rem;
+        padding: 1rem;
+     }
+     .about{
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+     }
+     .about-image{
+        width: 100%;
+     }
+
+     .about-content{
+        width: 100%;
+        margin:0;
+        padding:2rem;
+        text-align: center;
+     }
+     .about-content h2{
+        font-size:2rem;
+        width:100%;
+     }
+     .about-content p{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+     }
+     .gallery-header button{
+        display: none;
+     }
+     .gallery-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-header h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .gallery-main div{
+        width: 100%;
+        height: 8rem;
+    }
+    .gallery-main div:nth-child(1){
+        background: url(./images/desktop/image-deep-earth.jpg);
+    }
+    .gallery-main div:nth-child(2){
+        background: url(./images/desktop/image-night-arcade.jpg);
+    }
+    .gallery-main div:nth-child(3){
+        background: url(./images/desktop/image-soccer-team.jpg);
+    }
+    .gallery-main div:nth-child(4){
+        background: url(./images/desktop/image-grid.jpg);
+    }
+    .gallery-main div:nth-child(5){
+        background: url(./images/desktop/image-from-above.jpg);
+    }
+    .gallery-main div:nth-child(6){
+        background: url(./images/desktop/image-pocket-borealis.jpg);
+    }
+    .gallery-main div:nth-child(7){
+        background: url(./images/desktop/image-curiosity.jpg);
+    }
+    .gallery-main div:nth-child(8){
+        background: url(./images/desktop/image-fisheye.jpg);
+    }
+    .btn{
+        display: block;
+        margin:10% auto 5% auto;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+    .footer-left{
+        align-items: center;
+        gap: 0;
+    }
+    .footer-left nav ul li{
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .footer-right{
+        align-items: center;
+    }
+
+}    

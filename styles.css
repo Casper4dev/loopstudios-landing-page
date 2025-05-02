@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Alata;
+    src: url(./Alata-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans;
+    src: url(./JosefinSans-Thin.ttf);
+}
+
+header{
+    background-image: url(./images/desktop/image-hero.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header>nav>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+    padding-inline: 100px;
+}
+
+header>nav>div img{
+    width: 100px;
+}
+
+header>nav>div>ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+header>nav>div>ul>li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Alata;
+}
+
+/* #box{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 100px;
+    padding-inline: 100px;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: none;
+    font-family: Alata;
+    letter-spacing: 10px;
+    font-family: Josefin Sans;
+    
+} */
+
+#word{
+    margin-left:4rem;
+    margin-top: 4rem;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight:normal;
+    font-size: 35px;
+    text-transform: uppercase;
+    width:35%;
+    line-height: 2.5rem;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+
+main{
+    padding: 4rem 8rem;
+}
+
+main>div{
+    display: flex;
+    align-items: center;
+}
+
+main>div>div img, .content{
+    flex: 1;
+}
+main>div>div img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.content{
+    background: white;
+    margin-left: -15%;
+    margin-top: 20%;
+    padding: 4rem;
+}
+
+.content h3{
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+.content p{
+    color: grey;
+    font-family: "Alata";
+    font-weight: 400;
+    font-size: 0.5rem;
+    text-align: justify;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+/* main>div{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+main>div>div:first-child{
+    background-image: url(./images/desktop/image-interactive.jpg);
+    background-size: cover;
+    background-position-y:start;
+    min-height: 50vh;
+    min-width: 70vw;
+}
+
+main>div>div:nth-child(2){
+    position: absolute;
+    bottom: 0px;
+    right: 0vw;
+    background-color: white;
+    height: 25vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 5vh;
+    padding-left: 13vh;
+
+    h3{
+        text-transform: uppercase;
+        font-family:Josefin sans;
+        font-size: 40px;
+    }
+
+    p{
+        font-family: Josefin sans;
+        color: hsl(0, 0%, 85%) ;
+        font-weight: bold;
+    }
+
+} */
+
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    /* color: white; */
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-inline: 100px;
+    font-family: Josefin Sans;
+}
+
+p{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+button{
+    border: 2px solid black;
+    font-family: Josefin Sans;
+    padding-inline: 70px;
+    color: black;
+    background: transparent;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-inline: 100px;
+}
+
+section>div{
+    height: 70vh;
+}
+
+section>div:nth-child(1){
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section>div:nth-child(2){
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section>div:nth-child(3){
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section>div:nth-child(4){
+    background-image: url(./images/desktop/image-grid.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section>div:nth-child(5){
+    background-image: url(./images/desktop/image-from-above.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+section>div:nth-child(6){
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section>div:nth-child(7){
+    background-image: url(./images/desktop/image-curiosity.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+section>div:nth-child(8){
+    background-image: url(./images/desktop/image-fisheye.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section>div:nth-child(1),section>div:nth-child(2),section>div:nth-child(3),section>div:nth-child(4),section>div:nth-child(5),section>div:nth-child(6),section>div:nth-child(7),section>div:nth-child(8){
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+section>div:nth-child(1)>div,section>div:nth-child(2)>div,section>div:nth-child(4)>div,section>div:nth-child(5)>div,section>div:nth-child(6)>div,section>div:nth-child(7)>div,section>div:nth-child(8)>div{
+    margin: 50px;
+    color: white;
+    font-weight: 100;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+    h2{
+        font-family:Alata;
+        font-size: 30px;
+    }
+
+section>div:nth-child(3)>div,section>div:nth-child(5)>div{
+    margin: 50px;
+    color: white;
+    font-weight: 100;
+    width: 50%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h2{
+        font-family: Alata;
+        font-size: 30px;
+    }
+
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    height: 25vh;
+    font-family: Alata;
+    
+}
+
+footer>div{
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    padding-top: 30px;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.content{
+    padding-top: 20px;
+    color: hsl(0, 0%, 85%);
+}
+
+.container img{
+    width: 100px;
+}
